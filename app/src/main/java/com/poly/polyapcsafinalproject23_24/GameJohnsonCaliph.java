@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class GameJohnsonCaliph extends GameActivity {
 
+    private TextView tvTitle, tvSubtitle, tvStoryText;
+
+    private ImageView ivStory;
+
+    private Button btn1, btn2, btn3;
+
+    private boolean isWon;
+
+    private int numLives;
     //instance variables
     //   variables you plan to use throughout the adventure
     private Scanner scan;
@@ -13,8 +22,19 @@ public class GameJohnsonCaliph extends GameActivity {
 
     public void run()
     {
+        setContentView(R.layout.activty_game_3_button);
+
+        tvTitle = findViewById(R.id.tv_title_txt);
+        tvSubtitle = findViewById(R.id.tv_subtitle);
+        tvStoryText = findViewById(R.id.tv_story);
+        ivStory = findViewById(R.id.iv_story);
+        btn1= findViewById(R.id.btn_1);
+        btn2= findViewById(R.id.btn_2);
+        btn3= findViewById(R.id.btn_3);
+
+        tvTitle.setText("Chores");
         //initialize number of lives
-        numLives = 1;
+        numLives = 3;
         //create a scanner object for user input
         scan = new Scanner(System.in);
 
@@ -27,6 +47,12 @@ public class GameJohnsonCaliph extends GameActivity {
         System.out.println("This game is about dealing with chores you need to do for day you have options to make good or bad choices");
         Util.pauseConsole();
         start();
+    }
+    private void setAllBtnVisible()
+    {
+        btn1.setVisbility(View.VISBLE);
+        btn2.setVisbility(View.VISBLE);
+        btn3.setVisbility(View.VISBLE);
     }
 
     public void start()
