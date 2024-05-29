@@ -58,6 +58,18 @@ public class GameJohnsonCaliph extends GameActivity {
     public void start()
     {
         //start adventure here
+
+        isWon = false;
+
+        ivStory.setImageResource(R.drawable.im_chores_title);
+        playAudio(R.raw.audio_bass);
+
+        tvStoryText.setText("It's chore day. let's go on a Chore sweep!");
+
+        setAllBtnsVisible();
+        btn1.setText("Go clean dog poop");
+        btn2.setText("Go clean my room");
+        btn3.setText("Go clean the backyard");
         Util.clearConsole();
         System.out.println("You wake up and you have to do your chores for the day");
         System.out.println("1. Do your chores\n2. Don't do your chores");
