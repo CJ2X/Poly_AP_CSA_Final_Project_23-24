@@ -70,10 +70,15 @@ public class GameJohnsonCaliph extends GameActivity {
         btn1.setText("Go clean dog poop");
         btn2.setText("Go clean my room");
         btn3.setText("Go clean the backyard");
-        Util.clearConsole();
-        System.out.println("You wake up and you have to do your chores for the day");
-        System.out.println("1. Do your chores\n2. Don't do your chores");
-        int choice = Util.enterInt(1,2);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { doYourChores(); }
+         });
+
+
+
+
 
         if (choice == 1)
         {
