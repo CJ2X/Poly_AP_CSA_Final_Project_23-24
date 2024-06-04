@@ -80,15 +80,6 @@ public class GameJohnsonCaliph extends GameActivity {
 
 
 
-        if (choice == 1)
-        {
-            doYourChores();
-        }
-        else if (choice == 2)
-        {
-            dontDoYourChores();
-        }
-    }
     private void dontDoYourChores()
     {
         Util.clearConsole();
@@ -101,20 +92,14 @@ public class GameJohnsonCaliph extends GameActivity {
     //DO YOUR CHORES
     private void doYourChores()
     {
-        Util.clearConsole();
-        System.out.println("\nYou picked to do your chores and the first thing you do is clean your room");
-        System.out.println("1. Clean the bed\n2. Clean the desk");
-        int choice = Util.enterInt(1,2);
+        btn2.setOnClickLisenter(new View.OnClickListner() {
+            @Override
+            public void onClick(View v) {cleanTheBed();}
+        });
 
-        if (choice == 1)
-        {
-            cleanTheBed();
-        }
-        else if (choice == 2)
-        {
-            cleanTheDesk();
-        }
+
     }
+
 
     private void cleanTheBed()
     {
