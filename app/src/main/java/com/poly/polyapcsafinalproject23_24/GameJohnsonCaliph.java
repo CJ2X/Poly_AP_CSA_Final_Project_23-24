@@ -1,5 +1,10 @@
 package com.poly.polyapcsafinalproject23_24;
 
+import andriod.view.View;
+import andriod.widget.Button;
+import andriod.widget.ImageView;
+import andriod.widget.TextView;
+
 import java.util.Scanner;
 
 public class GameJohnsonCaliph extends GameActivity {
@@ -11,10 +16,10 @@ public class GameJohnsonCaliph extends GameActivity {
     private Button btn1, btn2, btn3;
 
     private boolean isWon;
-
-    private int numLives;
     //instance variables
     //   variables you plan to use throughout the adventure
+    private int numLives;
+    //private Player player; (optional)
     private Scanner scan;
     private int numLives;
     //private Player player; (optional)
@@ -38,14 +43,6 @@ public class GameJohnsonCaliph extends GameActivity {
         //create a scanner object for user input
         scan = new Scanner(System.in);
 
-        //create a player object (optional)
-        //player = new Player(...)
-
-        //display project title and description
-        Util.clearConsole();
-        System.out.println("Chores of the day");
-        System.out.println("This game is about dealing with chores you need to do for day you have options to make good or bad choices");
-        Util.pauseConsole();
         start();
     }
     private void setAllBtnVisible()
@@ -62,7 +59,6 @@ public class GameJohnsonCaliph extends GameActivity {
         isWon = false;
 
         ivStory.setImageResource(R.drawable.im_chores_title);
-        playAudio(R.raw.audio_bass);
 
         tvStoryText.setText("It's chore day. let's go on a Chore sweep!");
 
@@ -76,30 +72,16 @@ public class GameJohnsonCaliph extends GameActivity {
             public void onClick(View v) { doYourChores(); }
          });
 
-
-
-
-
-    private void dontDoYourChores()
-    {
-        Util.clearConsole();
-        System.out.println("\nSince you didn't do your chores then you automatially lose the game");
-        Util.pauseConsole();
-        Util.clearConsole();
-        defeat();
-    }
-
-    //DO YOUR CHORES
-    private void doYourChores()
     {
         btn2.setOnClickLisenter(new View.OnClickListner() {
             @Override
             public void onClick(View v) {cleanTheBed();}
         });
 
-
     }
-
+        btn3.setOnClickLisenter(new View.OnClickListner() {
+            @Override
+            public void onClick(View v) {cleanTheDesk();}
 
     private void cleanTheBed()
     {
