@@ -23,7 +23,7 @@ public class GameJohnsonCaliph extends GameActivity {
     private int numLives;
     //private Player player; (optional)
     private Scanner scan;
-    private int numLives;
+
     //private Player player; (optional)
 
 
@@ -100,15 +100,8 @@ public class GameJohnsonCaliph extends GameActivity {
         setAllBtnVisible();
         btn1.setText("Go clean dog poop");
         btn2.setText("Go clean my room");
-        btn3.
-        if (choice == 1)
-        {
-            cleanTheBed();
-        }
-        else if (choice == 2)
-        {
-            cleanTheDesk();
-        }
+        btn3.setText("Use your hands");
+
     }
 
     private void cleanTheBed()
@@ -123,14 +116,7 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nYou picked need gloves to clean the desk");
         tvStoryText.setText("1. Get gloves\n2. Don't get gloves");
 
-        if(choice == 1)
-        {
-            getGloves();
-        }
-        else if(choice == 2)
-        {
-            dontGetGloves();
-        }
+
     }
 
     private void useYourHands()
@@ -154,14 +140,7 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nCooking dinner should be easy, so you will be making a salad");
         tvStoryText.setText("1. Make a veggie salad\n2. Make a meat salad");
 
-        if(choice == 1)
-        {
-            makeVeggieSalad();
-        }
-        else if(choice == 2)
-        {
-            makeMeatSalad();
-        }
+
     }
 
     private void makeVeggieSalad()
@@ -173,14 +152,7 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nYou picked to make a meat salad but you got sick off of it");
         tvStoryText.setText("1. leave the salad\n2. clean the salad up");
 
-        if(choice == 1)
-        {
-            leaveTheSalad();
-        }
-        else if(choice == 2)
-        {
-            cleanTheSalad();
-        }
+
     }
     private void leavetheSalad()
     {
@@ -195,17 +167,11 @@ public class GameJohnsonCaliph extends GameActivity {
 
     private void cookTurkey()
     {
+       ivStory.setImageDrawable(R.drawable.);
         tvStoryText.setText("\nYou picked to cook turkey but your not to sure on how cook it right");
         tvStoryText.setText("1. Cook it in the mircowave\n2. Cook it in the oven");
 
-        if (choice == 1)
-        {
-            cookInTheMicrowave();
-        }
-        else if (choice == 2)
-        {
-            cookInTheOven();
-        }
+
     }
 
     private void cookInTheMicrowave()
@@ -218,14 +184,6 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nYou picked to cook it in the oven and it is cooked perfectly");
         tvStoryText.setText("1. Season the turkey\n2. Don't season the turkey");
 
-        if (choice == 1)
-        {
-            seasonTheTurkey();
-        }
-        else if (choice == 2)
-        {
-            dontSeasonTheTurkey();
-        }
     }
 
     private void seasonTheTurkey()
@@ -244,14 +202,6 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nCleaning the living room is very important becuase it is one of the biggest rooms in the house");
         tvStoryText.setText("1. Clean the couch\n2. Clean the TV");
 
-        if (choice == 1)
-        {
-            cleanTheCouch();
-        }
-        else if (choice == 2)
-        {
-            cleanTheTV();
-        }
     }
     private void cleanTheCouch()
     {
@@ -264,14 +214,6 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nYou picked to clean the TV and it is clean now you are ready to clean out the drawers");
         tvStoryText.setText("1. Clean the drawers fully\n2.Clean the drawers partially");
 
-        if (choice == 1)
-        {
-            cleanTheDrawersFully();
-        }
-        else if (choice == 2)
-        {
-            cleanTheDrawersPartially();
-        }
     }
 
     private void cleanTheDrawersFully()
@@ -291,14 +233,6 @@ public class GameJohnsonCaliph extends GameActivity {
         tvStoryText.setText("\nCleaning closet is going to be a big task to handle which would you like to start with first");
         tvStoryText.setText("1. Clean the clothes\n2. Clean the shoes");
 
-        if (choice == 1)
-        {
-            cleanTheClothes();
-        }
-        else if (choice == 2)
-        {
-            cleanTheShoes();
-        }
     }
     private void cleanTheClothes()
     {
