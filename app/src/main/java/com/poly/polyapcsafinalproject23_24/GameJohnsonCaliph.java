@@ -209,6 +209,7 @@ public class GameJohnsonCaliph extends GameActivity {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_meat_salad);
         tvStoryText.setText("\nYou picked to make a meat salad but you got sick off of it");
 
+        //change
 
         setAllBtnVisible();
         btn1.setText("Leave the salad");
