@@ -39,8 +39,8 @@ public class GameJohnsonCaliph extends GameActivity {
         btn2= findViewById(R.id.btn_2);
         btn3= findViewById(R.id.btn_3);
 
-        tvTitle.setText("Sunday Chore");
-        tvSubtitle.setText("Let do your do Chore");
+        tvTitle.setText("Sunday Chores");
+        tvSubtitle.setText("Let do your do Chores");
         //initialize number of lives
         numLives = 3;
         //create a scanner object for user input
@@ -63,10 +63,10 @@ public class GameJohnsonCaliph extends GameActivity {
 
 
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_chore_day);
-        tvStoryText.setText("It's chore day. let's go on a Chore sweep!");
+        tvStoryText.setText("It's chore day. Let's go on a chores sweep!");
 
         setAllBtnVisible();
-        btn1.setText("let do your chore");
+        btn1.setText("Let's do your chores");
         btn2.setVisibility(View.INVISIBLE);
         btn3.setVisibility(View.INVISIBLE);
 
@@ -84,10 +84,10 @@ public class GameJohnsonCaliph extends GameActivity {
     private void doYourChores()
     {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_do_chore);
-        tvStoryText.setText("\nYou picked to do your chores and the first thing you do is clean your room \n1. Clean the bed\n2. Clean the desk \n3.cleanTheLivingRoom ");
+        tvStoryText.setText("\nYou picked to do your chores and the first thing you do is clean your room \n1. Clean the bed\n2. Clean the desk \n3. Clean the living room ");
 
         setAllBtnVisible();
-        btn1.setText("Clean the Desk");
+        btn1.setText("Clean the desk");
         btn2.setText("Go clean my room");
         btn3.setText("Go clean the living room ");
 
@@ -126,11 +126,11 @@ public class GameJohnsonCaliph extends GameActivity {
     private void cleanTheDesk()
     {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_desk);
-        tvStoryText.setText("\nYou cleaned the desk then... \n1. Cook salad\n2. cook Turkey");
+        tvStoryText.setText("\nYou cleaned the desk then... \n1.Cook salad\n2. Cook turkey");
 
 
         setAllBtnVisible();
-        btn1.setText("Cooking salad");
+        btn1.setText("Cook salad");
         btn2.setText("Cook turkey");
         btn3.setVisibility(View.INVISIBLE);
 
@@ -173,7 +173,7 @@ public class GameJohnsonCaliph extends GameActivity {
     private void cookDinner()
     {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_making_salad);
-        tvStoryText.setText("\nCooking dinner should be easy, so you will be making which salad");
+        tvStoryText.setText("\nCooking dinner should be easy, So you will be making which salad");
 
 
         setAllBtnVisible();
@@ -409,7 +409,7 @@ public class GameJohnsonCaliph extends GameActivity {
     {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_clean_closest);
         tvStoryText.setText("\nCleaning closet is going to be a big task to handle which would you like to start with first");
-        tvStoryText.setText("1. Clean the clothes\n2. Clean the shoes");
+        tvStoryText.setText("1.Clean the clothes\n2.Clean the shoes");
 
         setAllBtnVisible();
         btn1.setText("Clean the clothes");
@@ -442,7 +442,6 @@ public class GameJohnsonCaliph extends GameActivity {
     private void cleanTheShoes()
     {
         ivStory.setImageResource(R.drawable.im_johnsoncaliph_shoe);
-        tvStoryText.setText("\nYou are doing pretty smooth so far by picking up the shoes which means you are done with evrything great job");
         defeat();
     }
 
